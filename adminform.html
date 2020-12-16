@@ -1,0 +1,48 @@
+<html>
+<head>
+<title>report genaration</title>
+<style>
+
+html { 
+  background: url(fly.jpeg) no-repeat center fixed; 
+  background-size: cover;
+}
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #000000;
+}
+li {
+	float: left;
+}
+li a {
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+li a:hover {
+	box-shadow: inset 0 -5px 0 0 green;
+}
+</style>
+
+</head>
+<body>
+<ul>
+ <li><a class="active" href="student.html">student login</a></li>
+ <li><a class="active" href="admin.html">admin login</a></li>
+<li><a class="active" href="contactus.html">Contact Us</a></li>
+</ul>
+<form action="http://localhost:9090/jsps/library_management/report.jsp" method="post">
+
+<br>
+<center>
+
+<input type="submit" value="GENERATE REPORT">
+</center></br>
+</form>
+</body>
+</html>

@@ -1,0 +1,63 @@
+
+<!DOCTYPE html>
+
+<head>
+<title>student</title>
+<style>
+
+html { 
+  background: url(book1.jpeg) no-repeat center fixed; 
+  background-size: cover;
+}
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #000000;
+}
+li {
+	float: left;
+}
+li a {
+	display: block;
+	color: white;
+	font-weight: bold;
+	font-style: italic;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+li a:hover {
+	
+	box-shadow: inset 0 -5px 0 0 green;
+}
+label {
+	color: white;
+	font-weight: bold;
+         }
+</style>
+
+</head>
+
+<body>
+<ul>
+ <li><a class="active" href="student.html">student login</a></li>
+ <li><a class="active" href="admin.html">admin login</a></li>
+<li><a class="active" href="contactus.html">Contact Us</a></li>
+</ul>
+</body>
+<form action="http://localhost:9090/jsps/library_management/adlog.jsp" method="post">
+<h1><font color="white">Admin login</font></h1>
+<table>
+<tr><td><label for="uname">Username:</label></td><td><input type="text" name="uname" required></td></tr>
+<tr><td><label for="upwd">Password:</label></td><td><input type="password" name="upwd" required></td></tr>
+
+
+<tr><td><input type="submit" value="Login"></td>&emsp;<td><input type="reset" ></td></tr>
+<tr><td><a href="admin1.html" style="text-decoration: none;"><font color="green">register</font></a></td></tr>
+</table>
+</form>
+
+
+</html>

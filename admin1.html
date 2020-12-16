@@ -1,0 +1,62 @@
+
+<html>
+
+<head>
+<title>admin</title>
+<style>
+
+html { 
+  background: url(lib6.jpeg) no-repeat center fixed; 
+  background-size: cover;
+}
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #333;
+}
+li {
+	float: left;
+}
+li a {
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+li a:hover {
+	background-color: green;
+}
+</style>
+
+</head>
+
+<body>
+<ul>
+ <li><a class="active" href="student.html">student login</a></li>
+ <li><a class="active" href="admin.html">admin login</a></li>
+ <li><a class="active" href="contactus.html">Contact Us</a></li>
+</ul>
+
+<form action="http://localhost:9090/jsps/library_management/adminreg.jsp" method="post">
+
+<h1 align="center" style="position: relative;left: -45px;"><u> Admin Registration form</u></h1>
+<table align="center">
+<tr><td><label for="name">name:</label></td><td><input type="text" name="name"></td></tr>
+<tr><td><label for="desig">Designation:</label></td><td><input type="text" name="desig"></td></tr>
+<tr><td><label for="empid">Employee id:</label></td><td><input type="text" name="empid"></td></tr>
+<tr><td><label for="username">Username:</label></td><td><input type="text" name="username"></td></tr>
+<tr><td><label for="pwd">Password:</label></td><td><input type="password" name="pwd"></td></tr>
+<tr><td><label for="cpwd">Confirm Password:</label></td><td><input type="password" name="cpwd"></td></tr>
+<tr><td><label for="librarian">Role:</label></td><td><input type="radio" name="role" value="librarian">librarian</input</td>
+       <td><input type="radio" name="role" value=" Assistant librarian" style="position: relative;left: -60px;"><font style="position: relative;left: -60px;"> Assistant Librarian</font></input></td></tr>
+<tr><td><input type="submit"></td><td><input type="reset" style="position: relative;left: -60px;"></td>
+
+</table>
+</form>
+
+</body>
+
+</html>

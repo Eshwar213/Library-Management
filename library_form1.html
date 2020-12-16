@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>registration form</title>
+<style> 
+html { 
+  background: url(kln2.jpg) no-repeat center fixed; 
+  background-size: cover;
+  
+}
+
+body { 
+  color: black; 
+  
+}
+
+img{
+opacity: 0.5;
+    filter: alpha(opacity=50);
+}
+
+.example1 {
+    top: 150px;
+    padding:15px;
+    
+}
+input[type=text],input[type=time],input[list=year],input[list=branch] {
+    width: 250px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 3px solid #ccc;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    outline: none;
+    font-size :20px;
+    border-radius :25px;
+}
+
+input[type=text]:focus {
+    border: 3px solid #555;
+}
+input[type=time]:focus {
+    border: 3px solid #555;
+}
+input[list=year]:focus {
+    border: 3px solid #555;
+}
+input[list=branch]:focus {
+    border: 3px solid #555;
+}
+textarea:focus{
+border: 3px solid #555;
+}
+input[type=button], input[type=submit], input[type=reset]
+{
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border-radius :25px;
+}
+input[type=submit]{
+    background-color: white;
+    color: black;
+    border: 2px solid #555555;
+}
+
+input[type=submit]:hover{
+    background-color: #555555;
+    color: white;
+}
+input[type=reset]{
+    background-color: white;
+    color: black;
+    border: 2px solid #555555;
+}
+input[type=reset]:hover{
+    background-color: #555555;
+    color: white;
+
+}
+
+
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #000ffffff;
+}
+li {
+	float: left;
+}
+li a {
+	display: block;
+	color:  white;
+	font-weight: bold;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+li a:hover {
+	
+	box-shadow: inset 0 -10px 0 0 green;
+}
+</style>
+</head>
+<body>
+ <ul>
+ <li><a class="active" href="student.html">student login</a></li>
+ <li><a class="active" href="admin.html">admin login</a></li>
+<li><a class="active" href="contactus.html">Contact Us</a></li>
+</ul>
+<center><h2>VIGNAN LIBRARY MANAGEMENT SYSTEM</h2></center>
+
+</body>
+<form  action="http://localhost:9090/jsps/library_management/feedbackreg.jsp" method="post">
+<table>
+<tr>
+    <td><font color="black"><b>Student Id:</b></font><input type="text" name="student_id" align="left" required><br></td>
+    <td><img src="v.png"  alt=logo style="position:absolute;width:250px ;height:250px; left :600px;top:150px;"/>
+        
+    
+</tr>
+<tr>
+       <td><font color="black"> <b>Student branch:</b></font><input list="branch" name="student_branch">
+  <datalist id="branch">
+    <option value="IT">
+    <option value="CSE">
+    <option value="ECM">
+    <option value="ECE">
+   <option value="MECH">
+   <option value="CIVIL">
+    <option value="EEE">
+   <option value="MBA">
+  <option value="MCA">
+  <option value="MTECH">
+  <option value="PHARMACY">
+  </datalist></td>
+</tr>
+<tr>
+       <td><font color="black"> <b>Student year:</b></font><input list="year" name="student_year">
+  <datalist id="year">
+    <option value="I st Year">
+    <option value="II nd Year">
+    <option value="III rd Year">
+    <option value="IV th Year">
+  </datalist></td>
+</tr>
+<tr>
+       <td><font color="black"><b>Book author:</b></font><input type="text" name="book_author"  required></td>
+</tr>
+<tr>
+      <td><font color="black"><b>Book edition:</b></font><input type="text" name="book_edition" required></td>
+</tr>
+
+<tr rowspan=3>
+      <td><font color="black"><b>Student In time:</b></font><input type="time" name="in_time"  required></td>
+      <td><font color="black"><b>Student Feedback:</b></font>
+     <textarea name="feedback" rows="6" cols="50"  placeholder=feedback.... style="background-color: white; /* Green */
+    border: none;
+    color: black;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border-radius: 25px;"
+
+
+required> </textarea></td>
+</tr>
+<tr >
+      <td><font color="black"><b>Student Out time:</b></font><input type="time" name="out_time"  required></td>
+</tr>
+<tr>
+      <td><input type="submit"></td> <td><input type="reset" style="position: relative;left: -160px;"></td>
+</tr>
+</table>
+</form>
+ <a href="sample12.html"><font color="black"> <b><strong>logout<strong></b></font></a>
+
+  
+
+
+</html>
+
+
+
+
+
+
+

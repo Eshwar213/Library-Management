@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+
+<head>
+
+<title>student</title>
+<style>
+html { 
+  background: url(book3.jpeg) no-repeat center fixed; 
+  background-size: cover;
+}
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #000ffffff;
+}
+li {
+	float: left;
+}
+li a {
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+li a:hover {
+	
+	box-shadow: inset 0 -5px 0 0 green;
+}
+</style>
+</head>
+
+<body>
+<script type="text/javascript">
+	function confirmpass() 
+	{
+       	 var pass = document.getElementById("pwd").value;
+       	 var confPass = document.getElementById("cpwd").value;
+        	 if (pass != confPass)
+{
+	alert('passwords dont match !');
+	return false;
+                  }
+return true;
+}
+    
+</script>
+<ul>
+ <li><a class="active" href="student.html">student login</a></li>
+ <li><a class="active" href="admin.html">admin login</a></li>
+ <li><a class="active" href="contactus.html">Contact Us</a></li>
+</ul>
+
+<form action="http://localhost:9090/jsps/studentreg.jsp" method="post" onsubmit="return confirmpass()">
+<h1 align="center"><u>Registration form</u></h1>
+<table align="center">
+
+<tr><td><label for="name">Name:</label></td><td><input type="text" name="name" required></td></tr>
+<tr><td><label for="reg no">Reg no:</label></td><td><input type="text" name="regno" required></td></tr>
+<tr><td><label for="branch">Branch:</label></td><td><select name="branch" required>
+                                                                                                   <option value="SELECT BRANCH">SELECT BRANCH</option>
+					       <option value="IT">IT</option>
+					       <option value="CSE">CSE</option>
+					       <option value="MECH">MECH</option>
+					       <option value="CIVIL">CIVIL</option>
+					      <option value="ECM">ECM</option>
+			                         <option value="ECE">ECE</option>
+					     <option value="EEE">EEE</option>
+			  	     <option value="MBA">MBA</option>
+					     <option value="MCA">MCA</option>
+					     <option value="PHARMACY">PHARMACY</option></td></tr>
+<tr><td><label for="year">Year:</label></td><td><select name="year" required>
+					<option value="select year">select year</option>
+					<option value="I st year">I st year</option>
+					<option value="II nd year">II nd year</option>
+					<option value="III rd year">III rd year</option>
+					<option value="IV th year">IV th year</option></td></tr>
+<tr><td><label for="username">Username:</label></td><td><input type="text" name="username"></td></tr>
+<tr><td><label for="pwd">Password:</label></td><td><input type="password" name="pwd" id="pwd" class="text" required></td></tr>
+<tr><td><label for="cpwd">Confirm Password:</label></td><td><input type="password" name="cpwd"  class="text" id="cpwd" required></td></tr>
+<tr><td><label for="role">Role:</label></td><td><select name="role" required>
+					<option value="select role/designation">select year</option>
+					<option value="faculty">FACULTY</option>
+					<option value="student">STUDENT</option>
+
+<tr><td><input type="submit"  name="submit" value="submit"></td><td><input type="reset" style="position: relative;left: -60px;"></td></tr>
+
+</table>
+</form>
+
+</body>
+</html>
